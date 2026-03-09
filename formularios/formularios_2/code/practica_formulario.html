@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+
+  <!-- Título para el navegador y los buscadores -->
+  <title>Clase 11 - Formularios II</title>
+
+  <!-- Descripción de la página para los buscadores -->
+  <meta name="description" content="Página de ejemplos vistos en la clase 11: Formularios II">
+
+  <!-- Palabras clave para los buscadores -->
+  <meta name="keywords" content="p, h1, h2, h3, h4, h5">
+
+  <!-- Autor de la página -->
+  <meta name="author" content="@bienvenidosaez">
+
+  <!-- Favicon de la página -->
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+
+  <!-- Codificación-->
+  <meta charset="UTF-8">
+
+  <!-- Para que la web sea responsive -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Para algunos navegadores móviles -->
+  <meta name="theme-color" content="#1e7bbf">
+
+</head>
+
+<body>
+  <header>
+    <h1>Ejemplos vistos en la Clase 11</h1>
+    <p><a href="index.html">👈 Volver atrás</a></p>
+    <hr />
+  </header>
+
+  <main>
+    <h1>Rellena tu CV</h1>
+    <form action="/rellenar" name="cv" method="get" enctype="multipart/form-data">
+      <div>
+        <p>
+          <label for="name">Nombre</label><br>
+          <input type="text" name="nombre" id="name" placeholder="Jose">
+        </p>
+        <p>
+          <label for="name">Apellido</label><br>
+          <input type="text" name="apellido" id="lastname" placeholder="Gomez">
+        </p>
+        <p>
+          <label for="contra">Contraseña</label><br>
+          <input type="text" name="pass" id="contra">
+        </p>
+        <p>
+          <label for="numdni">DNI</label><br>
+          <input type="text" name="dni" id="numdni" placeholder="22654987">
+        </p>
+        <br>
+        <p>
+          <label for="foto">Incluir mi foto</label>
+          <input type="file" name="img" id="foto" alt="Elegir">
+        </p>
+      </div>
+
+      <button>Guardar cambios</button><button type="reset">Borrar los datos introducidos</button>
+    </form>
+    <br>
+    <hr>
+    <h1>Formulario estructurado</h1>
+    <form action="/registrar/" name="registro" method="get" autocomplete="off" enctype="multipart/form-data">
+      <input type="hidden" name="company" value="maxfran">
+      <fieldset>
+        <legend>Datos personales</legend>
+        <p>
+          <label for="name">Nombre</label><br>
+          <input type="text" name="nombre" id="name" placeholder="Jose">
+          
+        </p>
+        <p>
+          <label for="lastname">Apellido</label><br>
+          <input type="text" name="apellido" id="lastname" placeholder="Gomez">
+        </p>
+        <p>
+          <label for="numdni">DNI</label><br>
+          <input type="text" name="dni" id="numdni" placeholder="55987321">
+        </p>
+      </fieldset>
+      <fieldset>
+        <legend>Datos de conexion</legend>
+        <p>
+          <label for="nomusu">Nombre de usuario</label><br>
+          <input type="text" name="nombre_usu" id="nomusu" autocomplete="username">
+        </p>
+        <p>
+          <label for="contra1">Contraseña</label><br>
+          <input type="text" name="pass1" id="contra1">
+        </p>
+        <p>
+          <label for="contra2">Repite la contraseña</label><br>
+          <input type="text" name="pass2" id="contra2">
+        </p>
+      </fieldset>
+
+    </form>
+  </main>
+
+  <hr>
+  <footer>
+    © ConquerBlocks 2023 - Todos los derechos reservados
+  </footer>
+</body>
+
+</html>

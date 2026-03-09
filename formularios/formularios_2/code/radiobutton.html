@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+
+  <!-- Título para el navegador y los buscadores -->
+  <title>Clase 11 - Formularios II</title>
+
+  <!-- Descripción de la página para los buscadores -->
+  <meta name="description" content="Página de ejemplos vistos en la clase 11: Formularios II">
+
+  <!-- Palabras clave para los buscadores -->
+  <meta name="keywords" content="p, h1, h2, h3, h4, h5">
+
+  <!-- Autor de la página -->
+  <meta name="author" content="@bienvenidosaez">
+
+  <!-- Favicon de la página -->
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+
+  <!-- Codificación-->
+  <meta charset="UTF-8">
+
+  <!-- Para que la web sea responsive -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Para algunos navegadores móviles -->
+  <meta name="theme-color" content="#1e7bbf">
+
+</head>
+
+<body>
+  <header>
+    <h1>Ejemplos vistos en la Clase 11</h1>
+    <p><a href="index.html">👈 Volver atrás</a></p>
+    <hr />
+  </header>
+
+  <main>
+    <h2>Ejemplo de radio</h2>
+    <!-- Los radiobutton son opciones excluyentes(ej: multiple choice), solo se puede elegir una opcion,
+     como un color de zapatillas. En radiobutton nesecitamos el name y el value(pareja calve-valor) name='color'
+     y el value='negro'. Es importante que todos los radiobutton tengan el mismo name(color) para que si marcamos
+      una opcion el navegador desmarque la opcion marcada anteriormente-->
+
+    <form action="#" method="get">
+      <p>Seleccione el color deseado de sus zapatillas</p>
+      <div>
+        <p> <!-- Es recomendable no poner el mismo nombre del value(servidor) y el label(usuario), para no
+           confundir lo que va al servidor y lo que ve el usuario-->
+          <input type="radio" name="color" value="negro" id="black">
+          <!-- Mediante la etiqueta label y su atributo for y la etiqueta input con su atributo id, 
+           enlasamos el texto que ve el usuario con el radiobutton id='black'-> for='black', asi al pinchar
+           en el texto tambien se marca la opcion-->
+          <label for="black">Negro azabache</label>
+        </p>
+        <p>
+          <input type="radio" name="color" value="blanco" id="white">
+          <label for="white">Blanco nuclear</label>
+        </p>
+        <p>
+          <input type="radio" name="color" value="rojo" id="red">
+          <label for="red">Color Rojo</label>
+        </p>
+      </div>
+
+      <p>Seleccione la talla</p>
+      <div>
+        <p>
+          <input type="radio" name="size" value="39" id="size39">
+          <label for="size39">Talla 39</label>
+        </p>
+        <p>
+          <input type="radio" name="size" value="40" id="size40">
+          <label for="size40">Talla 40</label>
+        </p>
+      </div>
+  
+      <div>
+        <p>
+          <button>Enviar</button>
+        </p>
+      </div>
+    </form>
+
+
+
+  </main>
+
+  <hr>
+  <footer>
+    © ConquerBlocks 2023 - Todos los derechos reservados
+  </footer>
+</body>
+
+</html>

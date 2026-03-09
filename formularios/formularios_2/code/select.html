@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+
+  <!-- Título para el navegador y los buscadores -->
+  <title>Clase 11 - Formularios II</title>
+
+  <!-- Descripción de la página para los buscadores -->
+  <meta name="description" content="Página de ejemplos vistos en la clase 11: Formularios II">
+
+  <!-- Palabras clave para los buscadores -->
+  <meta name="keywords" content="p, h1, h2, h3, h4, h5">
+
+  <!-- Autor de la página -->
+  <meta name="author" content="@bienvenidosaez">
+
+  <!-- Favicon de la página -->
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+
+  <!-- Codificación-->
+  <meta charset="UTF-8">
+
+  <!-- Para que la web sea responsive -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Para algunos navegadores móviles -->
+  <meta name="theme-color" content="#1e7bbf">
+
+</head>
+
+<body>
+  <header>
+    <h1>Ejemplos vistos en la Clase 11</h1>
+    <p><a href="index.html">👈 Volver atrás</a></p>
+    <hr />
+  </header>
+
+  <main>
+    <h2>Ejemplo de radio</h2>
+
+    <form action="#" method="get">
+      <label for="size">Seleccione la talla</label>
+      <select name="size" id="size" required><!-- Con required toda opcion con value va ser obligatorio,
+        y la primera opcion con el - no va ser valida-->
+        <option value="">-</option><!-- Ponemos un - para que aparezca como primera opcion y no una talla -->
+        <option value="39">Talla 39</option>
+        <option value="40">Talla 40</option>
+        <option value="41">Talla 41</option>
+        <option value="42">Talla 42</option>
+        <option value="43">Talla 43</option>
+      </select>
+  
+      <div>
+        <p>
+          <button>Enviar</button>
+        </p>
+      </div>
+    </form>
+
+
+
+  </main>
+
+  <hr>
+  <footer>
+    © ConquerBlocks 2023 - Todos los derechos reservados
+  </footer>
+</body>
+
+</html>
