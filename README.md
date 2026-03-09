@@ -34,17 +34,7 @@ Mi enfoque es aprender con mentalidad profesional: estructura limpia, semántica
 - Git  
 - GitHub  
 - Linux (entorno de desarrollo)  
-- Python (POO + SOLID)  
-
----
-
-## 📂 Estructura del repositorio
-/estructura-basica
-/formularios
-/tablas
-/mini-proyectos
-
-Cada carpeta representa una práctica enfocada en un concepto específico.
+- Python (POO + SOLID) 
 
 ---
 
