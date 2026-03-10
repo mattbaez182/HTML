@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+
+  <!-- Título para el navegador y los buscadores -->
+  <title>Clase 12</title>
+
+  <!-- Descripción de la página para los buscadores -->
+  <meta name="description" content="Página de ejemplos vistos en la clase 5: Texto en HTML">
+
+  <!-- Palabras clave para los buscadores -->
+  <meta name="keywords" content="p, h1, h2, h3, h4, h5">
+
+  <!-- Autor de la página -->
+  <meta name="author" content="@bienvenidosaez">
+
+  <!-- Favicon de la página -->
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+
+  <!-- Codificación-->
+  <meta charset="UTF-8">
+
+  <!-- Para que la web sea responsive -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Para algunos navegadores móviles -->
+  <meta name="theme-color" content="#1e7bbf">
+
+</head>
+
+<body>
+  <header>
+    <h1>Tarea 12.4</h1>
+    <p><a href="index.html">👈 Volver atrás</a></p>
+    <hr />
+  </header>
+
+  <main>
+    <h2>Información sobre el producto</h2>
+    <form action="" method="post" enctype="multipart/form-data">
+      <fieldset>
+        <legend>Datos básicos</legend>
+        <p>
+          <label for="name">Nombre</label><br>
+          <input type="text" name="name" id="name">
+        </p>
+        <br>
+        <p>
+          <label for="des">Descripción</label><br>
+          <textarea name="description" id="des" cols="30" rows="5"></textarea>
+        </p>
+        <br>
+        <p>
+          <label for="foto">Foto</label>
+          <input type="file" name="foto" id="foto">
+        </p>
+        <p>
+          <input type="checkbox" name="cont" id="cont">
+          <label for="cont">Añadir contador de visitas</label>
+        </p>
+      </fieldset>
+      <fieldset>
+        <legend>Datos económicos</legend>
+        <p>
+          <label for="pre">Precios</label>
+          <input type="number" name="precio" id="pre">$ &nbsp 
+          <!-- &nbsp esto es una entidad que sirve para crear un espacio inquebrantable -->
+          <label for="imp">Impuestos</label>
+          <select name="impuestos" id="imp" required>
+            <option value="">-</option>
+            <option value="4">4%</option>
+            <option value="7">7%</option>
+            <option value="16">16%</option>
+            <option value="25">25%</option>
+          </select>
+        </p>
+        <p>
+          Promoción <br>
+          <input type="radio" name="promocion" id="ninguno">
+          <label for="ninguno">Ninguno</label> <br>
+          <input type="radio" name="promocion" id="trans">
+          <label for="trans">Transporte gratuito</label> <br>
+          <input type="radio" name="promocion" id="desc">
+          <label for="desc">Descuento 5%</label>
+        </p>
+      </fieldset>
+
+    </form>
+
+  </main>
+
+  <hr>
+  <footer>
+    © Matias Baez 2026 - Todos los derechos reservados
+  </footer>
+</body>
+
+</html>
