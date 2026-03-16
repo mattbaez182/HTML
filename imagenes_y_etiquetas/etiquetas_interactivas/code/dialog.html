@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+
+  <!-- Título para el navegador y los buscadores -->
+  <title>Clase 14</title>
+
+  <!-- Descripción de la página para los buscadores -->
+  <meta name="description" content="Página de ejemplos vistos en la clase 5: Texto en HTML">
+
+  <!-- Palabras clave para los buscadores -->
+  <meta name="keywords" content="p, h1, h2, h3, h4, h5">
+
+  <!-- Autor de la página -->
+  <meta name="author" content="@bienvenidosaez">
+
+  <!-- Favicon de la página -->
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+
+  <!-- Codificación-->
+  <meta charset="UTF-8">
+
+  <!-- Para que la web sea responsive -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Para algunos navegadores móviles -->
+  <meta name="theme-color" content="#1e7bbf">
+
+</head>
+
+<body>
+  <header>
+      <h1>Clase 15 - Etiquetas interactivas</h1>
+    <p><a href="index.html">👈 Volver atrás</a></p>
+    <hr />
+  </header>
+
+  <main>
+    <h2>Ejemplo de elemento dialog</h2>
+    <button onClick="document.getElementById('dialogo1').open = true">Abrir diálogo</button>
+
+    <dialog id="dialogo1">
+      <section>
+        <h2>Sección 1</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id nulla quis officia sint eos reiciendis maxime commodi quae? Veniam, nisi? Provident eaque pariatur quia eos iste! Quia repellendus corrupti iure?</p>
+      </section>
+  
+      <section>
+        <h2>Sección 2</h2>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Beatae, obcaecati repudiandae nihil nulla necessitatibus, aspernatur nisi maiores facilis tenetur sequi similique officiis, maxime corrupti explicabo consequatur sapiente. Ipsam, soluta error?</p>
+      </section>
+
+      <p>
+        <button onClick="document.getElementById('dialogo1').close()">Cerrar</button>
+      </p>
+    </dialog>
+
+
+
+  </main>
+
+  <hr>
+  <footer>
+    © Matias Baez 2026- Todos los derechos reservados
+  </footer>
+</body>
+
+</html>
